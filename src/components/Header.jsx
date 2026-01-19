@@ -12,11 +12,14 @@ const Header = () => {
         
         {/* Logo */}
         <div className="flex items-center gap-2">
+          <Link to={"/"}>
           <img
             src={logo}
             alt="Logo"
-            className="h-10 w-auto object-contain"
+            className="h-15 w-auto object-contain"
           />
+          </Link>
+          
         </div>
 
         {/* Navigation */}

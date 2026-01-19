@@ -44,7 +44,10 @@ const Home = () => {
         />
       </div>
     </section>
-    <section>
+    <section >
+      <header className="flex justify-center my-8">
+        <h1>Heading</h1>
+      </header>
       <Item/>
     </section>
     </>
