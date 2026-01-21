@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 // Simple Shimmer/Skeleton Loader Component
 const ProductSkeleton = () => (
   <div className="pl-2 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-    <Card className="h-[400px] animate-pulse bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-800">
+    <Card className="h-100 animate-pulse bg-slate-100 dark:bg-slate-800 border-slate-200 dark:border-slate-800">
       <CardContent className="p-6 flex flex-col gap-4">
         <div className="h-48 bg-slate-200 dark:bg-slate-700 rounded-xl w-full" />
         <div className="h-4 bg-slate-200 dark:bg-slate-700 rounded w-3/4 mt-4" />
@@ -37,10 +37,10 @@ const Item = () => {
       <div className="max-w-7xl mx-auto px-6">
         {/* Header matching Footer Brand Style */}
         <header className="flex flex-col items-center mb-12 space-y-3">
-          <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold tracking-tight bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
             FEATURED PRODUCTS
           </h2>
-          <div className="h-1.5 w-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+          <div className="h-1.5 w-20 bg-linear-to-r from-emerald-500 to-teal-500 rounded-full"></div>
         </header>
 
         <div className="w-full px-4 sm:px-10">
@@ -56,7 +56,7 @@ const Item = () => {
                       className="pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
                     >
                       <Link to={`/product/${item.id}`} className="group block">
-                        <Card className="h-[400px] overflow-hidden border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-2">
+                        <Card className="h-100 overflow-hidden border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-2">
                           <CardContent className="p-0 flex flex-col h-full">
                             {/* Image Container */}
                             <div className="h-52 w-full flex items-center justify-center overflow-hidden bg-white p-6">
@@ -68,7 +68,7 @@ const Item = () => {
                             </div>
                             
                             {/* Content Area */}
-                            <div className="flex flex-col flex-grow p-6 space-y-4">
+                            <div className="flex flex-col grow p-6 space-y-4">
                               <div className="space-y-2">
                                 <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
                                   {item.category}

@@ -3,17 +3,17 @@ import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-br from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-t border-slate-200 dark:border-slate-800">
+    <footer className="w-full bg-linear-to-br from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 border-t border-slate-200 dark:border-slate-800">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-12">
           
           {/* Brand & Description */}
           <div className="space-y-6 lg:col-span-4">
             <div className="space-y-3">
-              <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+              <h2 className="text-3xl font-bold tracking-tight bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
                 SARAL KART
               </h2>
-              <div className="h-1 w-16 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+              <div className="h-1 w-16 bg-linear-to-r from-emerald-500 to-teal-500 rounded-full"></div>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-slate-600 dark:text-slate-400">
               Sustainable products for a better future. Shop smart, live green, and make an impact with every purchase.
@@ -104,7 +104,7 @@ export function Footer() {
                 />
                 <button 
                   type="submit" 
-                  className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all bg-gradient-to-r from-emerald-600 to-teal-600 text-white h-10 px-4"
+                  className="inline-flex items-center justify-center rounded-md text-sm font-medium transition-all bg-linear-to-r from-emerald-600 to-teal-600 text-white h-10 px-4"
                 >
                   Subscribe
                 </button>
@@ -117,7 +117,7 @@ export function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="my-12 h-px bg-gradient-to-r from-transparent via-slate-300 dark:via-slate-700 to-transparent"></div>
+        <div className="my-12 h-px bg-linear-to-r from-transparent via-slate-300 dark:via-slate-700 to-transparent"></div>
 
         {/* Bottom Section */}
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">

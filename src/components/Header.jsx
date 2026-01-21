@@ -7,7 +7,7 @@ const Header = () => {
   const [log, setLog] = useState(true);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-br from-slate-50/90 via-white/90 to-slate-50/90 dark:from-slate-950/90 dark:via-slate-900/90 dark:to-slate-950/90 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-linear-to-br from-slate-50/90 via-white/90 to-slate-50/90 dark:from-slate-950/90 dark:via-slate-900/90 dark:to-slate-950/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         
         {/* Logo & Brand Name Styling */}
@@ -57,7 +57,7 @@ const Header = () => {
           ) : (
             <Button
               size="lg"
-              className="rounded-md bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-md hover:shadow-emerald-500/20 transition-all"
+              className="rounded-md bg-linear-to-r from-emerald-600 to-teal-600 text-white shadow-md hover:shadow-emerald-500/20 transition-all"
             >
               Profile
             </Button>

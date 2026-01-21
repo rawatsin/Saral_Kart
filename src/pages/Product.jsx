@@ -65,16 +65,16 @@ const Product = () => {
   }
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 py-16 px-6">
+    <main className="min-h-screen bg-linear-to-br from-slate-50 via-white to-slate-50 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 py-16 px-6">
       <div className="mx-auto max-w-7xl">
         {categories.map((category) => (
           <section key={category.title} className="mb-20">
             {/* Category Header */}
             <div className="mb-10 space-y-2">
-              <h2 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
+              <h2 className="text-3xl font-bold tracking-tight bg-linear-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent">
                 {category.title}
               </h2>
-              <div className="h-1 w-20 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full"></div>
+              <div className="h-1 w-20 bg-linear-to-r from-emerald-500 to-teal-500 rounded-full"></div>
             </div>
 
             {/* Product Grid */}
@@ -82,7 +82,7 @@ const Product = () => {
               {category.items.map((item) => (
                 <article
                   key={item.id}
-                  className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 transition-all hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1"
+                  className="cursor-pointer group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 transition-all hover:shadow-2xl hover:shadow-emerald-500/10 hover:-translate-y-1"
                 >
                   {/* Image Container */}
                   <div className="aspect-square overflow-hidden bg-white p-8">
@@ -113,9 +113,7 @@ const Product = () => {
                         <span className="text-lg font-bold text-slate-900 dark:text-white">
                           ${item.price.toFixed(2)}
                         </span>
-                        <button className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-lg shadow-emerald-500/20 transition-transform hover:scale-110 active:scale-95">
-                          <ShoppingCart className="h-4 w-4" />
-                        </button>
+                       
                       </div>
                     </div>
                   </div>
