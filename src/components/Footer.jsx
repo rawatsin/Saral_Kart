@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"; // Added this import
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 
 export function Footer() {

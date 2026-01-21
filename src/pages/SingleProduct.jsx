@@ -124,7 +124,7 @@ const SingleProduct = () => {
 
             {/* Action Buttons */}
             <div className="flex gap-3 pt-4">
-              <button className="flex-1 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-all bg-gradient-to-r from-emerald-600 to-teal-600 text-white h-12 px-6 hover:shadow-lg hover:shadow-emerald-500/30 hover:-translate-y-0.5">
+              <button className="flex-1 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-all bg-linear-to-r from-emerald-600 to-teal-600 text-white h-12 px-6 hover:shadow-lg hover:shadow-emerald-500/30 hover:-translate-y-0.5">
                 <ShoppingCart className="h-5 w-5" />
                 Add to Cart
               </button>
