@@ -23,7 +23,7 @@ const ProductSkeleton = () => (
 );
 
 const Item = () => {
-  const [data, setData] = useState(undefined);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
