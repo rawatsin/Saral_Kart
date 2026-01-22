@@ -41,7 +41,7 @@ const SingleProduct = () => {
           
           {/* Left: Product Image */}
           <div className="relative overflow-hidden rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 shadow-sm">
-            <div className="aspect-[4/3] flex items-center justify-center">
+            <div className="aspect-4/3 flex items-center justify-center">
               <img 
                 src={data.image} 
                 alt={data.title}
