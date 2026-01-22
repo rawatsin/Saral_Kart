@@ -70,8 +70,8 @@ const SingleProduct = () => {
                 {data.title}
               </h1>
               <div className="mt-2 flex items-center gap-3">
-                <span className="text-3xl font-bold text-slate-900 dark:text-white">${data.price}</span>
-                <span className="text-sm text-slate-400 line-through">${(data.price * 1.3).toFixed(2)}</span>
+                <span className="text-3xl font-bold text-slate-900 dark:text-white">₹{(data.price * 80).toLocaleString("en-IN")}</span>
+                <span className="text-sm text-slate-400 line-through">₹{(data.price * 90).toLocaleString("en-IN")}</span>
                 <span className="text-[11px] font-bold text-red-500 bg-red-50 dark:bg-red-950 px-1.5 py-0.5 rounded">-30%</span>
               </div>
             </div>

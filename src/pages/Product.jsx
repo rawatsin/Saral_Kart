@@ -112,7 +112,7 @@ const Product = () => {
                           <div className="mt-auto pt-4">
                             <div className="flex items-center justify-between">
                               <span className="text-lg font-bold text-slate-900 dark:text-white">
-                                ${item.price.toFixed(2)}
+                                ₹{(item.price * 80).toLocaleString("en-IN")}
                               </span>
                               <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity">
                                 View Details →
