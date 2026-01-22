@@ -29,7 +29,7 @@ const Item = () => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
       .then((products) => setData(products))
-      .catch((err) => console.error(err));
+      // .catch((err) => console.error(err));
   }, []);
 
   return (
