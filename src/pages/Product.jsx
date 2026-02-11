@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Star } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
 
 // --- Shimmer Component ---
 const ProductSkeleton = () => (
@@ -25,8 +25,12 @@ const ProductSkeleton = () => (
 );
 
 const Product = () => {
+  const [cart, setCart] = useOutletContext();
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
+  const handleAddtoCart = () => {
+    
+  };
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -118,6 +122,14 @@ const Product = () => {
                                 View Details →
                               </span>
                             </div>
+                            <span>
+                              <button
+                                onClick={handleAddtoCart}
+                                className="cursor-pointer"
+                              >
+                                Add to cart
+                              </button>
+                            </span>
                           </div>
                         </div>
                       </article>

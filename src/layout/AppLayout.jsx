@@ -1,22 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from "../components/Header"
 import Footer from '../components/Footer'
 
 const AppLayout = () => {
-  const path=useLocation();
+  const [cart,setCart]=useState([]);
+
+  const location=useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [path]);
+  }, [location]);
   return (
     <div>
         <Header/>
-        <Outlet></Outlet>
+        <Outlet context={[cart,setCart]}></Outlet>
         <Footer/>
 
-        {/* footer
-        
-        fake store API*/}
+        {/*fake store API*/}
     </div>
 
 
